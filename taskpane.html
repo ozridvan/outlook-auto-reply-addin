@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Otomatik Yanıt Eklentisi</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Otomatik Yanıt Şablonları</h1>
+        <div class="reply-section">
+            <h2>Dahili Yanıtlar</h2>
+            <ul id="internal-replies">
+                <li>
+                    <p>Şu anda ofis dışında olduğum için e-postanıza dönüşüm dönüşümde olacaktır.</p>
+                    <button onclick="applyTemplate('internal', 0)">Uygula</button>
+                </li>
+                <li>
+                    <p>E-postanız için teşekkürler. Şu anda müsait değilim, en kısa sürede size geri döneceğim.</p>
+                    <button onclick="applyTemplate('internal', 1)">Uygula</button>
+                </li>
+            </ul>
+        </div>
+        <div class="reply-section">
+            <h2>Harici Yanıtlar</h2>
+            <ul id="external-replies">
+                <li>
+                    <p>[Dönüş tarihi] tarihine kadar ofis dışında olacağım. Acil durumlar için lütfen [alternatif kişi] ile iletişime geçin.</p>
+                    <button onclick="applyTemplate('external', 0)">Uygula</button>
+                </li>
+                <li>
+                    <p>Mesajınız için teşekkürler. Şu anda ofis dışında olduğum için en kısa sürede dönüş yapacağım.</p>
+                    <button onclick="applyTemplate('external', 1)">Uygula</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="taskpane.js"></script>
+</body>
+</html>
