@@ -4,8 +4,8 @@
   "description": "Outlook için otomatik yanıt şablonu eklentisi",
   "main": "src/taskpane.js",
   "scripts": {
-    "start": "npx gh-pages -d src -s",
-    "deploy": "npx gh-pages -d src"
+  "start": "npx gh-pages -d src -s",
+  "deploy": "npx gh-pages -d src --repo https://x-access-token:${GITHUB_TOKEN}@github.com/ozridvan/outlook-auto-reply-addin.git"
   },
   "author": "Şirketiniz",
   "license": "MIT",
