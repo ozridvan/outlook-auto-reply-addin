@@ -1,0 +1,17 @@
+{
+  "name": "outlook-auto-reply-addin",
+  "version": "1.0.0",
+  "description": "Outlook için otomatik yanıt şablonu eklentisi",
+  "main": "src/taskpane.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "author": "Şirketiniz",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "@microsoft/office-js": "^1.1.0"
+  }
+}
