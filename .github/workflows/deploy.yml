@@ -1,4 +1,4 @@
-name: Deploy Add in
+name: Deploy Outlook Addin
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -20,11 +20,5 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
-        run: npm run build # Projeyi derleme komutunu ekledik
-
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # Çoğu Node.js projesi derlenmiş dosyaları 'dist' klasörüne koyar
+        run: npm run deploy
