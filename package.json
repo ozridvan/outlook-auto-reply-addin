@@ -4,7 +4,7 @@
   "description": "Outlook için otomatik yanıt şablonu eklentisi",
   "main": "src/taskpane.js",
   "scripts": {
-    "start": "npx live-server src --port=3000 --https=C:\\Users\\ridvan.soyler\\.office-addin-dev-certs\\localhost.crt --key=C:\\Users\\ridvan.soyler\\.office-addin-dev-certs\\localhost.key",
+    "start": "npx gh-pages -d src -s",
     "deploy": "npx gh-pages -d src"
   },
   "author": "Şirketiniz",
