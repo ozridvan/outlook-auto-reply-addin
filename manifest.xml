@@ -8,9 +8,9 @@
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName>Otomatik Yanıt Şablonu</DisplayName>
   <Description>Otomatik yanıtlar için standart şablon önerisi sunar.</Description>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://oztiryakiler.com.tr/iletisim"/>
+  <IconUrl DefaultValue="https://<GITHUB_USERNAME>.github.io/outlook-auto-reply-addin/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://<GITHUB_USERNAME>.github.io/outlook-auto-reply-addin/assets/icon-64.png"/>
+  <SupportUrl DefaultValue="https://<GITHUB_USERNAME>.github.io/outlook-auto-reply-addin/"/>
   <Hosts>
     <Host Name="Mailbox"/>
   </Hosts>
@@ -22,11 +22,11 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:8080/taskpane.html"/>
+        <SourceLocation DefaultValue="https://<GITHUB_USERNAME>.github.io/outlook-auto-reply-addin/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
       <WebSettings>
-        <SourceLocation DefaultValue="https://localhost:8080/taskpane.html"/>
+        <SourceLocation DefaultValue="https://<GITHUB_USERNAME>.github.io/outlook-auto-reply-addin/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </WebSettings>
     </Form>

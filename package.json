@@ -4,12 +4,14 @@
   "description": "Outlook için otomatik yanıt şablonu eklentisi",
   "main": "src/taskpane.js",
   "scripts": {
-    "start": "live-server src"
+    "start": "npx live-server src --port=3000 --https=C:\\Users\\ridvan.soyler\\.office-addin-dev-certs\\localhost.crt --key=C:\\Users\\ridvan.soyler\\.office-addin-dev-certs\\localhost.key",
+    "deploy": "npx gh-pages -d src"
   },
   "author": "Şirketiniz",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "gh-pages": "^5.0.0"
   },
   "dependencies": {
     "@microsoft/office-js": "^1.1.0"
