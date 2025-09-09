@@ -20,11 +20,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build  # Eğer build script'iniz varsa bu satırı ekleyin
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Kendi build klasörünüzü yazın (örneğin: build, public)
+          publish_dir: ./src  # Kaynak dosyaları doğrudan yayınla
