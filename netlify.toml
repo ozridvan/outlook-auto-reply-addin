@@ -1,0 +1,33 @@
+[build]
+  publish = "src"
+  command = "echo 'No build step required for static files'"
+
+[build.environment]
+  NODE_VERSION = "16"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "*.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Content-Type = "text/css"
+
+[[redirects]]
+  from = "/manifest"
+  to = "/manifest.xml"
+  status = 301
