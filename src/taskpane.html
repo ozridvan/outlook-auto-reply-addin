@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Auto Reply Add-in</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Auto Reply Templates</h1>
+        <div class="reply-section">
+            <h2>Internal Replies</h2>
+            <ul id="internal-replies">
+                <li>
+                    <p>I'm currently out of the office and will respond to your email upon my return.</p>
+                    <button onclick="applyTemplate('internal', 0)">Apply</button>
+                </li>
+                <li>
+                    <p>Thank you for your email. I am currently unavailable but will get back to you shortly.</p>
+                    <button onclick="applyTemplate('internal', 1)">Apply</button>
+                </li>
+            </ul>
+        </div>
+        <div class="reply-section">
+            <h2>External Replies</h2>
+            <ul id="external-replies">
+                <li>
+                    <p>I am out of the office until [return date]. For immediate assistance, please contact [alternative contact].</p>
+                    <button onclick="applyTemplate('external', 0)">Apply</button>
+                </li>
+                <li>
+                    <p>Thank you for your message. I am currently out of the office and will respond as soon as possible.</p>
+                    <button onclick="applyTemplate('external', 1)">Apply</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="taskpane.js"></script>
+</body>
+</html>
